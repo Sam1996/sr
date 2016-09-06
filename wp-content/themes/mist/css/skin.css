@@ -1,0 +1,104 @@
+/* ================================= Skin CSS ================================= */
+
+/* ===================
+ * HEADER
+   =================== */
+
+/* Light */
+.header-section.header-skin-light.header-no-transparent,
+.header-section.header-skin-light .zozo-main-nav.navbar-nav .dropdown-menu,
+.header-section.header-skin-light .zozo-main-nav.navbar-nav .sub-menu,
+.header-section.header-skin-light .header-toggle-section,
+.header-section.header-skin-light .zozo-megamenu-wrapper,
+.header-section.header-skin-light .search-form .input-group input.form-control,
+.header-section.header-skin-light .zozo-megamenu-wrapper,
+.header-section.header-skin-light .header-toggle-content,
+.header-section.header-skin-light.header-semi-transparent .header-main-section.header-toggle-visible,
+.header-section.header-transparent.header-skin-light .header-sticky.is-sticky .header-main-section {
+	background-color:#fff;
+}
+.header-section.header-skin-light,
+.header-section.header-skin-light .header-main-section,
+.header-section.header-skin-light .woo-cart-contents,
+.header-section.header-skin-light .woo-cart-contents .woo-cart-item > a,
+.header-section.header-skin-light .header-toggle-section,
+.header-section.header-skin-light.header-transparent .search-form .input-group input.form-control,
+.header-section.header-skin-light .zozo-megamenu-widgets-container .widget li a {
+	color:#333;
+	border-color:#e1e1e1;
+}
+.header-section.header-skin-light .main-mobile-nav .zozo-main-nav li > a,
+.header-section.header-skin-light .main-right-mobile-nav .zozo-main-nav li > a,
+.header-section.header-skin-light .woo-cart-contents .woo-cart-item .remove-cart-item {
+	background-color:#f7f7f7;
+}
+.header-section.header-skin-light .navbar-toggle .icon-bar{
+	background:#000;
+}
+.header-skin-light .form-control::-moz-placeholder {
+	color: #333;
+}
+.header-skin-light .form-control:-ms-input-placeholder {
+	color: #333;
+}
+.header-skin-light .form-control::-webkit-input-placeholder {
+	color: #333;
+}
+
+/* Dark */
+.header-section.header-skin-dark,
+.header-section.header-skin-dark .woo-cart-contents,
+.header-section.header-skin-dark .woo-cart-contents .woo-cart-item > a,
+.header-section.header-skin-dark .zozo-main-nav.navbar-nav .dropdown-menu,
+.header-section.header-skin-dark .zozo-main-nav.navbar-nav .sub-menu,
+.header-section.header-skin-dark .input,
+.header-section.header-skin-dark input.form-control,
+.header-section.header-skin-dark .header-toggle-section,
+.header-section.header-skin-dark .zozo-megamenu-wrapper,
+.header-section.header-skin-dark.header-transparent .search-form .input-group input.form-control,
+.header-section.header-skin-dark .zozo-megamenu-widgets-container .widget li a,
+.header-section.header-skin-dark .header-toggle-content,
+.header-section.header-skin-dark.header-semi-transparent .header-main-section.header-toggle-visible,
+.header-section.header-transparent.header-skin-dark .header-sticky.is-sticky .header-main-section {
+	background-color:#000;
+	color:#fff;
+	border-color:#7c7c7c;
+}
+.header-section.header-skin-dark .main-mobile-nav .zozo-main-nav li > a,
+.header-section.header-skin-dark .main-right-mobile-nav .zozo-main-nav li > a,
+.header-section.header-skin-dark .woo-cart-contents .woo-cart-item .remove-cart-item,
+.header-skin-dark .zozo-social-icons.soc-icon-circle li a,
+.header-skin-dark .zozo-social-icons.soc-icon-flat li a {
+	background-color:#333;
+	color:#fff;
+}
+.header-section.header-skin-dark .navbar-toggle .icon-bar {
+	background:#fff;
+}
+.header-section.header-skin-dark .form-control::-moz-placeholder {
+	color: #fff;
+}
+.header-section.header-skin-dark .form-control:-ms-input-placeholder {
+	color: #fff;
+}
+.header-section.header-skin-dark .form-control::-webkit-input-placeholder {
+	color: #fff;
+}
+/*Transparent*/
+.header-skin-light.header-transparent .top-contact-info > .header-contact-details > li,
+.header-skin-light.header-transparent .top-contact-info > .header-contact-details > li > a {
+	color:#333;
+}
+/* Semi-Transparent */
+.header-section.header-skin-dark.header-semi-transparent,
+.header-section.header-skin-light.header-semi-transparent {
+	background-color:transparent;
+}
+.header-section.header-skin-dark.header-semi-transparent .header-logo-section,
+.header-section.header-skin-dark.header-semi-transparent .header-main-section {
+	background-color:rgba(0,0,0,0.7);
+}
+.header-section.header-skin-light.header-semi-transparent .header-logo-section,
+.header-section.header-skin-light.header-semi-transparent .header-main-section {
+	background-color:rgba(255,255,255,0.7);
+}

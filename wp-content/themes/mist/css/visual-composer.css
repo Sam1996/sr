@@ -1,0 +1,258 @@
+/* ================================= Visual Composer CSS ================================= */
+
+/* Section Styles */
+.typo-light,.typo-light h1,.typo-light h2,.typo-light h3,.typo-light h4,.typo-light h5,.typo-light h6,.typo-light p,.typo-light a:hover,.typo-light a.btn:hover{
+	color:#fff;
+}
+.typo-dark,.typo-dark h1,.typo-dark h2,.typo-dark h3,.typo-dark h4,.typo-dark h5,.typo-dark h6,.typo-dark p,.typo-light a.btn{
+	color:#333;
+}
+/* Image Filters */
+.grid-image-wrapper {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.grid-image-wrapper.img-size-small img {
+	width: auto;
+}
+.zozo-img-filter-grayscale img{ 
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");*/ /* Firefox 3.5+, IE10 */
+	filter: gray; 
+	-webkit-filter: grayscale(100%);
+	-webkit-backface-visibility: hidden; /* Fix for transition flickering */
+	transition: all 0.6s ease-in-out;
+	-ms-transition: all 0.6s ease-in-out;
+	-moz-transition: all 0.6s ease-in-out;
+	-webkit-transition: all 0.6s ease-in-out;
+}
+.zozo-img-filter-grayscale:hover img{ 
+	/*filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale"); */
+	filter: none;
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+}
+/* Hover Effects */
+.zozo-image-wrapper.img-circle {
+	max-width:80%;
+	margin:0 auto 20px;
+	display: inline-block;
+}
+.zozo-feature-box img,
+.zozo-img-hover img {
+	transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	width:100%;
+}
+.zozo-img-hover-grow:hover img { 
+	transform: scale(1.2); 
+	-ms-transform: scale(1.2); 
+	-webkit-transform: scale(1.2); 
+	-o-transform: scale(1.2); 
+	-moz-transform: scale(1.2);
+}
+.zozo-img-hover-grow:hover .grid-shape-angled .zozo-image-wrapper img.img-angled {
+	transform: skewY(-3deg) scale(1.2); 
+	-ms-transform: skewY(-3deg) scale(1.2); 
+	-webkit-transform: skewY(-3deg) scale(1.2); 
+	-o-transform: skewY(-3deg) scale(1.2); 
+	-moz-transform: skewY(-3deg) scale(1.2);
+}
+.zozo-img-hover-grow-rotate:hover img { 
+	transform: scale(1.2) rotate(3deg); 
+	-ms-transform: scale(1.2) rotate(3deg); 
+	-webkit-transform: scale(1.2) rotate(3deg); 
+	-o-transform: scale(1.2) rotate(3deg); 
+	-moz-transform: scale(1.2) rotate(3deg);
+}
+.zozo-img-hover-grow-rotate:hover .grid-shape-angled .zozo-image-wrapper img.img-angled {
+	transform: skewY(-3deg) rotate(2deg) scale(1.2); 
+	-ms-transform: skewY(-3deg) rotate(2deg) scale(1.2); 
+	-webkit-transform: skewY(-3deg) rotate(2deg) scale(1.2); 
+	-o-transform: skewY(-3deg) rotate(2deg) scale(1.2); 
+	-moz-transform: skewY(-3deg) rotate(2deg) scale(1.2);
+}
+.zozo-img-hover-blurr img, .zozo-img-hover-blurr-invert img { 
+	transition: all 0.2s; 
+	-moz-transition: all 0.2s; 
+	-webkit-transition: all 0.2s; 
+	-o-transition: all 0.2s; 
+}
+.zozo-img-hover-blurr:hover img { 
+	filter: blur(3px); 
+	-webkit-filter: blur(3px); 
+	-moz-filter: blur(3px); 
+	-o-filter: blur(3px); 
+	-ms-filter: blur(3px); 
+}
+.zozo-img-hover-blurr-invert img { 
+	filter: blur(3px); 
+	-webkit-filter: blur(3px); 
+	-moz-filter: blur(3px); 
+	-o-filter: blur(3px); 
+	-ms-filter: blur(3px); 
+}
+.zozo-img-hover-blurr-invert:hover img { 
+	filter: blur(0px); 
+	-webkit-filter: blur(0px); 
+	-moz-filter: blur(0px); 
+	-o-filter: blur(0px); 
+	-ms-filter: blur(0px); 
+}
+.zozo-img-hover-fade-in .zozo-image-wrapper { 
+	background: #000; 
+}
+.zozo-img-hover-fade-in img { 
+	opacity: 0.5; 
+	-moz-opacity: 0.5; 
+	-webkit-opacity: 0.5; 
+}
+.zozo-img-hover-fade-in:hover img { 
+	opacity: 1; 
+	-moz-opacity: 1; 
+	-webkit-opacity: 1; 
+}
+.zozo-img-hover-fade-out .zozo-image-wrapper { 
+	background: #000; 
+}
+.zozo-img-hover-fade-out:hover img { 
+	opacity: 0.6; 
+	-moz-opacity: 0.6; 
+	-webkit-opacity: 0.6; 
+}
+.zozo-img-hover-sepia:hover img { 
+	-webkit-filter: sepia(100%); 
+	filter: sepia(100%); 
+}
+/*.wpb_single_image .vc_single_image-wrapper {
+	display: block;
+}*/
+.ult-carousel-wrapper .wpb_single_image .vc_single_image-wrapper {
+	display: inline-block;
+}
+/* Image Grid Box - Title And Image On Top & Default box */
+.zozo-feature-box.style-title-top-icon .grid-image-wrapper img,
+.zozo-feature-box.style-default-box .grid-text-right .grid-image-wrapper img,
+.zozo-feature-box.style-default-box .grid-text-left .grid-image-wrapper img {
+	max-width:40px;
+}
+.feature-box-style.style-title-top-icon .grid-box-image.grid-icon-box-left .grid-icon-box-title,
+.feature-box-style.style-title-top-icon .grid-box-image.grid-icon-box-right .grid-icon-box-title,
+.feature-box-style.style-default-box .grid-box-image.grid-icon-box-left .grid-icon-box-title,
+.feature-box-style.style-default-box .grid-box-image.grid-icon-box-right .grid-icon-box-title {
+	line-height: 40px;
+    min-height: 40px;
+    position: relative;
+    vertical-align: middle;
+}
+.feature-box-style.style-title-top-icon .grid-box-image.grid-icon-box-left .grid-icon-box-title .grid-title,
+.feature-box-style.style-default-box .grid-box-image.grid-text-left .grid-content-wrapper {
+	margin-left:55px;
+}
+.feature-box-style.style-title-top-icon .grid-box-image.grid-icon-box-right .grid-icon-box-title .grid-title,
+.feature-box-style.style-default-box .grid-box-image.grid-text-right .grid-content-wrapper {
+	margin-right:55px;
+}
+.zozo-feature-box.style-title-top-icon .grid-icon-box-left .grid-image-wrapper,
+.zozo-feature-box.style-title-top-icon .grid-icon-box-right .grid-image-wrapper {
+	position:absolute;
+	left:0;
+	right:auto;
+	top:0;
+	bottom:0;
+	margin-bottom:0;
+}
+.zozo-feature-box.style-title-top-icon .grid-icon-box-right .grid-image-wrapper {
+	left:auto;
+	right:0;
+}
+/* Image Grid Box - Backgrounnd */
+.zozo-feature-box.style-box-with-bg .grid-text-left .grid-image-wrapper,
+.zozo-feature-box.style-box-with-bg .grid-text-right .grid-image-wrapper,
+.zozo-feature-box.style-outline-box .grid-text-left .grid-image-wrapper,
+.zozo-feature-box.style-outline-box .grid-text-right .grid-image-wrapper,
+.zozo-feature-box.style-overlay-box .grid-text-left .grid-image-wrapper,
+.zozo-feature-box.style-overlay-box .grid-text-right .grid-image-wrapper {
+	position:static;
+}
+.zozo-feature-box .grid-text-right .grid-image-wrapper {
+	text-align:right;
+}
+.zozo-feature-box .grid-text-center .grid-image-wrapper {
+	text-align:center;
+}
+.zozo-feature-box.style-overlay-box .zozo-image-wrapper.img-circle {
+	margin-bottom:0;
+}
+/*Side Container styles*/
+.vc-zozo-section{
+	padding:75px 0;
+	margin-bottom:0;
+}
+.wpb_row.vc_row {
+	margin-bottom:0;
+}
+.vc-zozo-section.bg-style.image-right,.vc-zozo-section.bg-style.image-left{
+	padding:0;
+}
+.vc_row.bg-style.image-left, .vc_row.bg-style.image-right {
+	background-image: none !important;
+}
+.bg-style.image-left .vc-side-image-wrapper, .bg-style.image-right .vc-side-image-wrapper {
+    padding-left: 0;
+	padding-right: 0;
+}
+.bg-style.image-left .vc-side-content-wrapper, .bg-style.image-right .vc-side-content-wrapper {
+	padding: 75px 0;
+}
+.bg-style.image-left .container-fluid .vc-side-content-wrapper, .bg-style.image-right .container-fluid .vc-side-content-wrapper {
+	padding: 75px 3%;
+}
+/*Accordion*/
+.vc_tta-accordion.vc_tta-style-default .vc_tta-panel-title > a {
+	border-bottom:1px solid #e1e1e1;
+}
+.vc_tta-accordion.vc_tta-style-default .vc_tta-panel-body {
+	padding: 5px 0;
+}
+.vc_tta-accordion.vc_tta-style-default .vc_tta-panel-title > a {
+	padding: 8px 0;
+}
+.vc_tta-accordion.vc_tta-style-default .vc_tta-panel-heading {
+	border:none;
+}
+.vc_tta-accordion.vc_tta-style-default .vc_tta-panel-title {
+	font-weight: 600;
+    line-height: 22px;
+	font-size:16px;
+}
+/* Ultimate VC Addons - Flip Boxes */
+.flip-box-wrap .ifb-flip-box-section {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+/* VC call to action transparent */	
+.vc_btn3.vc_btn3-color-white.vc_btn3-style-transparent, .vc_btn3.vc_btn3-color-white.vc_btn3-style-transparent:hover {
+	color:#fff;
+}
+.vc_btn3.vc_btn3-color-default.vc_btn3-style-transparent, .vc_btn3.vc_btn3-color-default.vc_btn3-style-transparent:hover {
+	color:#f7f7f7;
+}
+.vc_btn3.vc_btn3-color-primary.vc_btn3-style-transparent, .vc_btn3.vc_btn3-color-primary.vc_btn3-style-transparent:hover {
+	color:#0088cc;
+}
+.vc_btn3.vc_btn3-color-info.vc_btn3-style-transparent, .vc_btn3.vc_btn3-color-info.vc_btn3-style-transparent:hover {
+	color:#58b9da;
+}
+.vc_btn3.vc_btn3-color-success.vc_btn3-style-transparent, .vc_btn3.vc_btn3-color-success.vc_btn3-style-transparent:hover {
+	color:#6ab165;
+}
+.vc_btn3.vc_btn3-color-warning.vc_btn3-style-transparent, .vc_btn3.vc_btn3-color-warning.vc_btn3-style-transparent:hover {
+	color:#ff9900;
+}
+.vc_btn3.vc_btn3-color-danger.vc_btn3-style-transparent, .vc_btn3.vc_btn3-color-danger.vc_btn3-style-transparent:hover {
+	color:#ff675b;
+}

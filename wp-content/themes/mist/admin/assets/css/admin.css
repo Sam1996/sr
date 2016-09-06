@@ -1,0 +1,13 @@
+#update-nag, .update-nag {
+	display: block;
+}
+.redux-main #zozo_options-zozo_header_type img {
+    width: 100% !important;
+}
+#zozo_options-zozo_header_type.redux-container-image_select ul.redux-image-select li {
+	display: block;
+}
+.vc_colored-dropdown .primary-bg {
+	background: #ffc400 !important;
+	color: #ffffff !important;
+}
